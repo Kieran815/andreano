@@ -22,6 +22,16 @@ export default function Nav({ onMenuToggle = () => {} }) {
               onClick={e => {
                 onMenuToggle();
               }}
+              to="/CourtHouse"
+            >
+              Courthouse Construction Timelapse
+            </Link>
+          </li>
+          <li>
+            <Link
+              onClick={e => {
+                onMenuToggle();
+              }}
               to="/Generic"
             >
               Generic Page

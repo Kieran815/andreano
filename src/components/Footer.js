@@ -1,16 +1,11 @@
 import React from 'react';
 import config from '../../config';
-export default function Footer() {
+
+const Footer = () => {
   return (
     <section id="footer">
       <div className="inner">
-        <h2 className="major">Get in touch</h2>
-        <p>
-          Cras mattis ante fermentum, malesuada neque vitae, eleifend erat.
-          Phasellus non pulvinar erat. Fusce tincidunt, nisl eget mattis
-          egestas, purus ipsum consequat orci, sit amet lobortis lorem lacus in
-          tellus. Sed ac elementum arcu. Quisque placerat auctor laoreet.
-        </p>
+        <h2 className="major">Contact Our Office</h2>
         <form method="post" action="/#">
           <div className="fields">
             <div className="field">
@@ -47,12 +42,11 @@ export default function Footer() {
           })}
         </ul>
         <ul className="copyright">
-          <li>&copy; AppSeed.</li>
-          <li>
-            Design: <a href="http://html5up.net">HTML5 UP</a>
-          </li>
+          <li>&copy; <a href="https://kieran815.github.io">K. Michael Milligan, 2020</a></li>
         </ul>
       </div>
     </section>
   );
 }
+
+export default Footer;
