@@ -1,85 +1,109 @@
 import React from 'react';
-
 import Layout from '../components/Layout';
+import tl190218 from '../assets/images/tl190218.jpg';
+import tl190119 from '../assets/images/tl190119.jpg';
+import tl180801 from '../assets/images/tl180801.jpg';
+import tl180421 from '../assets/images/tl180421.jpg';
+import tl180315 from '../assets/images/tl180315.jpg';
+import tl180306 from '../assets/images/tl180306.jpg';
+import tl180209 from '../assets/images/tl180209.jpg';
+import config from '../../config';
+
 import pic4 from '../assets/images/pic04.jpg';
 import pic5 from '../assets/images/pic05.jpg';
 
 const CourtHouse = () => (
   <Layout fullMenu>
+  <div>
     <section id="wrapper">
       <header>
         <div className="inner">
-          <h2>I am the courthouse page</h2>
-          <p>Phasellus non pulvinar erat. Fusce tincidunt nisl eget ipsum.</p>
+          <h2>Courthouse Construction Timelapse</h2>
         </div>
       </header>
-
-      <div className="wrapper">
+      <section id="four" className="wrapper alt style1">
         <div className="inner">
-          <h3 className="major">Lorem ipsum dolor</h3>
-          <p>
-            Morbi mattis mi consectetur tortor elementum, varius pellentesque
-            velit convallis. Aenean tincidunt lectus auctor mauris maximus, ac
-            scelerisque ipsum tempor. Duis vulputate ex et ex tincidunt, quis
-            lacinia velit aliquet. Duis non efficitur nisi, id malesuada justo.
-            Maecenas sagittis felis ac sagittis semper. Curabitur purus leo
-            donec vel dolor at arcu tincidunt bibendum. Interdum et malesuada
-            fames ac ante ipsum primis in faucibus. Fusce ut aliquet justo.
-            Donec id neque ipsum. Integer eget ultricies odio. Nam vel ex a orci
-            fringilla tincidunt. Aliquam eleifend ligula non velit accumsan
-            cursus. Etiam ut gravida sapien.
-          </p>
-
-          <p>
-            Vestibulum ultrices risus velit, sit amet blandit massa auctor sit
-            amet. Sed eu lectus sem. Phasellus in odio at ipsum porttitor mollis
-            id vel diam. Praesent sit amet posuere risus, eu faucibus lectus.
-            Vivamus ex ligula, tempus pulvinar ipsum in, auctor porta quam.
-            Proin nec commodo, vel scelerisque nisi scelerisque. Suspendisse id
-            quam vel tortor tincidunt suscipit. Nullam auctor orci eu dolor
-            consectetur, interdum ullamcorper ante tincidunt. Mauris felis nec
-            felis elementum varius.
-          </p>
-
-          <h3 className="major">Vitae phasellus</h3>
-          <p>
-            Cras mattis ante fermentum, malesuada neque vitae, eleifend erat.
-            Phasellus non pulvinar erat. Fusce tincidunt, nisl eget mattis
-            egestas, purus ipsum consequat orci, sit amet lobortis lorem lacus
-            in tellus. Sed ac elementum arcu. Quisque placerat auctor laoreet.
-          </p>
-
+        <p>A pivotal project in the rejuvenation of downtown Joliet, this new Justice Center replaces an existing courthouse with a modern and secure facility that engages the public with a welcoming landscaped plaza. The new courthouse conveys the notion of “transparency in justice” through the generous use of glass in all public areas.</p>
+        <p>The new facility accommodates 38 courtrooms serving criminal, civil, family, traffic, and special proceedings caseloads. The ten-story tower is composed of four court floor plates complete with judges’ chambers and jury deliberation suites.</p>
           <section className="features">
             <article>
-              <a href="/#" className="image">
-                <img src={pic4} alt="" />
-              </a>
-              <h3 className="major">Sed feugiat lorem</h3>
+              <img className="image" src="https://res.cloudinary.com/dpcbzfiye/image/upload/w_1620,c_fill,dpr_auto,f_auto,q_auto,fl_progressive/v1533740524/u607ut79iz8wxj0lgsol.jpg" alt="Will County Courthouse" />
+              <h3 className="major">Will County Courthouse</h3>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id
-                nulla dignissim dapibus ultrices.
+                Expected Completion: September 2020
               </p>
-              <a href="/#" className="special">
-                Learn more
+              <a target="_blank" rel="noopener noreferrer" href="https://www.aia.org/showcases/208431-will-county-courthouse" className="special">
+                View Concept Art
               </a>
             </article>
             <article>
-              <a href="/#" className="image">
-                <img src={pic5} alt="" />
+              <img className="image" src={tl190218} alt="" />
+              <h3 className="major">{config.youTubeVideos[0].name}</h3>
+              <p>{config.youTubeVideos[0].description}</p>
+              <a target="_blank" rel="noopener noreferrer"   href={config.youTubeVideos[0].url} className="special">
+                Watch Video
               </a>
-              <h3 className="major">Nisl placerat</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id
-                nulla dignissim dapibus ultrices.
-              </p>
-              <a href="/#" className="special">
-                Learn more
+            </article>
+            <article>
+              <img className="image" src={tl190119} alt="" />
+              <h3 className="major">{config.youTubeVideos[1].name}</h3>
+              <p>{config.youTubeVideos[1].description}</p>
+              <a target="_blank" rel="noopener noreferrer"  href={config.youTubeVideos[1].url} className="special">
+                Watch Video
+              </a>
+            </article>
+            <article>
+              <img className="image" src={tl180801} alt="" />
+              <h3 className="major">{config.youTubeVideos[2].name}</h3>
+              <p>{config.youTubeVideos[2].description}</p>
+              <a target="_blank" rel="noopener noreferrer"  href={config.youTubeVideos[2].url} className="special">
+                Watch Video
+              </a>
+            </article>
+            <article>
+              <img className="image" src={tl180421} alt="" />
+              <h3 className="major">{config.youTubeVideos[3].name}</h3>
+              <p>{config.youTubeVideos[3].description}</p>
+              <a target="_blank" rel="noopener noreferrer"  href={config.youTubeVideos[3].url} className="special">
+                Watch Video
+              </a>
+            </article>
+            <article>
+              <img className="image" src={tl180315} alt="" />
+              <h3 className="major">{config.youTubeVideos[4].name}</h3>
+              <p>{config.youTubeVideos[4].description}</p>
+              <a target="_blank" rel="noopener noreferrer"  href={config.youTubeVideos[4].url} className="special">
+                Watch Video
+              </a>
+            </article>
+            <article>
+              <img className="image" src={tl180306} alt="" />
+              <h3 className="major">{config.youTubeVideos[5].name}</h3>
+              <p>{config.youTubeVideos[5].description}</p>
+              <a target="_blank" rel="noopener noreferrer"  href={config.youTubeVideos[5].url} className="special">
+                Watch Video
+              </a>
+            </article>
+            <article>
+              <img className="image" src={tl180209} alt="" />
+              <h3 className="major">{config.youTubeVideos[6].name}</h3>
+              <p>{config.youTubeVideos[6].description}</p>
+              <a target="_blank" rel="noopener noreferrer"  href={config.youTubeVideos[6].url} className="special">
+                Watch Video
               </a>
             </article>
           </section>
+          <ul className="actions">
+            <li>
+              <a  target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/channel/UCD6SmhAumDFaXMFBHf8oDNg" className="button">
+                Browse All
+              </a>
+            </li>
+          </ul>
         </div>
-      </div>
+      </section>
     </section>
+  </div>
   </Layout>
 );
 

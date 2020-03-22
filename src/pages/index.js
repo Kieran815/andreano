@@ -5,10 +5,14 @@ import Layout from '../components/Layout';
 import pic1 from '../assets/images/pic01.jpg';
 import pic2 from '../assets/images/pic02.jpg';
 import pic3 from '../assets/images/pic03.jpg';
-import pic4 from '../assets/images/pic04.jpg';
-import pic5 from '../assets/images/pic05.jpg';
-import pic6 from '../assets/images/pic06.jpg';
-import pic7 from '../assets/images/pic07.jpg';
+
+import tl190218 from '../assets/images/tl190218.jpg';
+import tl190119 from '../assets/images/tl190119.jpg';
+import tl180801 from '../assets/images/tl180801.jpg';
+import tl180421 from '../assets/images/tl180421.jpg';
+import tl180315 from '../assets/images/tl180315.jpg';
+import tl180306 from '../assets/images/tl180306.jpg';
+import tl180209 from '../assets/images/tl180209.jpg';
 
 import config from '../../config';
 const IndexPage = () => (
@@ -16,7 +20,7 @@ const IndexPage = () => (
     <section id="banner">
       <div className="inner">
         <div className="logo">
-          <span className="icon fa-diamond"></span>
+          <span className="icon fa-balance-scale"></span>
         </div>
         <h2>{config.heading}</h2>
         <div className="subHeading" style={{display: "flex", justifyContent: "space-around"}}>
@@ -75,7 +79,7 @@ const IndexPage = () => (
                 <li>Prenuptial Agreements</li>
               </ul>
             <a href="/#" className="special">
-              Learn more
+              Learn More
             </a>
           </div>
         </div>
@@ -90,55 +94,71 @@ const IndexPage = () => (
           <p>
             The new facility accommodates 38 courtrooms serving criminal, civil, family, traffic, and special proceedings caseloads. The ten-story tower is composed of four court floor plates complete with judges’ chambers and jury deliberation suites.
           </p>
-
           <section className="features">
             <article>
-                <img className="image" src="https://res.cloudinary.com/dpcbzfiye/image/upload/w_1620,c_fill,dpr_auto,f_auto,q_auto,fl_progressive/v1533740524/u607ut79iz8wxj0lgsol.jpg" alt="Will County Courthouse" />
+              <img className="image" src="https://res.cloudinary.com/dpcbzfiye/image/upload/w_1620,c_fill,dpr_auto,f_auto,q_auto,fl_progressive/v1533740524/u607ut79iz8wxj0lgsol.jpg" alt="Will County Courthouse" />
               <h3 className="major">Will County Courthouse</h3>
               <p>
                 Expected Completion: September 2020
               </p>
               <a href="https://www.aia.org/showcases/208431-will-county-courthouse" className="special">
-                Learn more
+                View Concept Art
               </a>
             </article>
             <article>
-              <a href="/#" className="image">
-                <img src={pic5} alt="" />
-              </a>
-              <h3 className="major">Nisl placerat</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id
-                nulla dignissim dapibus ultrices.
-              </p>
-              <a href="/#" className="special">
-                Learn more
+              <img className="image" src={tl190218} alt="" />
+              <h3 className="major">{config.youTubeVideos[0].name}</h3>
+              <p>{config.youTubeVideos[0].description}</p>
+              <a target="_blank" rel="noopener noreferrer"   href={config.youTubeVideos[0].url} className="special">
+                Watch Video
               </a>
             </article>
             <article>
-              <a href="/#" className="image">
-                <img src={pic6} alt="" />
-              </a>
-              <h3 className="major">Ante fermentum</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id
-                nulla dignissim dapibus ultrices.
-              </p>
-              <a href="/#" className="special">
-                Learn more
+              <img className="image" src={tl190119} alt="" />
+              <h3 className="major">{config.youTubeVideos[1].name}</h3>
+              <p>{config.youTubeVideos[1].description}</p>
+              <a target="_blank" rel="noopener noreferrer"  href={config.youTubeVideos[1].url} className="special">
+                Watch Video
               </a>
             </article>
             <article>
-              <a href="/#" className="image">
-                <img src={pic7} alt="" />
+              <img className="image" src={tl180801} alt="" />
+              <h3 className="major">{config.youTubeVideos[2].name}</h3>
+              <p>{config.youTubeVideos[2].description}</p>
+              <a target="_blank" rel="noopener noreferrer"  href={config.youTubeVideos[2].url} className="special">
+                Watch Video
               </a>
-              <h3 className="major">Fusce consequat</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id
-                nulla dignissim dapibus ultrices.
-              </p>
-              <a href="/#" className="special">
-                Learn more
+            </article>
+            <article>
+              <img className="image" src={tl180421} alt="" />
+              <h3 className="major">{config.youTubeVideos[3].name}</h3>
+              <p>{config.youTubeVideos[3].description}</p>
+              <a target="_blank" rel="noopener noreferrer"  href={config.youTubeVideos[3].url} className="special">
+                Watch Video
+              </a>
+            </article>
+            <article>
+              <img className="image" src={tl180315} alt="" />
+              <h3 className="major">{config.youTubeVideos[4].name}</h3>
+              <p>{config.youTubeVideos[4].description}</p>
+              <a target="_blank" rel="noopener noreferrer"  href={config.youTubeVideos[4].url} className="special">
+                Watch Video
+              </a>
+            </article>
+            <article>
+              <img className="image" src={tl180306} alt="" />
+              <h3 className="major">{config.youTubeVideos[5].name}</h3>
+              <p>{config.youTubeVideos[5].description}</p>
+              <a target="_blank" rel="noopener noreferrer"  href={config.youTubeVideos[5].url} className="special">
+                Watch Video
+              </a>
+            </article>
+            <article>
+              <img className="image" src={tl180209} alt="" />
+              <h3 className="major">{config.youTubeVideos[6].name}</h3>
+              <p>{config.youTubeVideos[6].description}</p>
+              <a target="_blank" rel="noopener noreferrer"  href={config.youTubeVideos[6].url} className="special">
+                Watch Video
               </a>
             </article>
           </section>
