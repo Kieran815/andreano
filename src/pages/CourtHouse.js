@@ -9,9 +9,6 @@ import tl180306 from '../assets/images/tl180306.jpg';
 import tl180209 from '../assets/images/tl180209.jpg';
 import config from '../../config';
 
-import pic4 from '../assets/images/pic04.jpg';
-import pic5 from '../assets/images/pic05.jpg';
-
 const CourtHouse = () => (
   <Layout fullMenu>
   <div>
